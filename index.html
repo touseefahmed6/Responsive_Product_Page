@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h5>HEADPHONES</h5>
+        <div class="TextDiv">
+            <h2>Beats EP</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo numquam ratione, iure nostrum repellat illum animi architecto deserunt quod. Maxime soluta fugiat aliquid similique voluptas eos aliquam ex facere error.</p>
+        </div>
+        <div class="images">
+            <h3>Colors</h3>
+            <img class="img1" id="img1" src="blue.png" alt="">
+            <img class="img2" id="img2" src="Black2.png" alt="">
+            <img class="img3" id="img3" src="white1.png" alt="">
+            <img class="img4" id="img4" src="red.png" alt="">
+        </div>
+        <div class="cable">
+            <h3>Cable Configuration</h3>
+            <button type="button">Straight</button>
+            <button type="button">Colled</button>
+            <button type="button">Long-Colled</button>
+        </div>
+        <div class="price">
+            <h3>$148</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="imgDiv">
+            <img id="redHeadphones" src="red.png" alt="">
+        </div>
+    </div>
+    <script>
+        const BlueImg=document.getElementById("img1");
+        const BlackImg=document.getElementById("img2");
+        const WhiteImg=document.getElementById("img3");
+        const RedImg=document.getElementById("img4");
+        const redHeadphonesImage=document.getElementById('redHeadphones')
+        BlueImg.addEventListener('click',()=>{
+            redHeadphonesImage.src='blue.png';
+        });
+        BlackImg.addEventListener('click',()=>{
+            redHeadphonesImage.src='Black2.png';
+        });
+        WhiteImg.addEventListener('click',()=>{
+            redHeadphonesImage.src='White1.png';
+        });
+        RedImg.addEventListener('click',()=>{
+            redHeadphonesImage.src='red.png';
+        });
+    </script>
+</body>
+</html>
